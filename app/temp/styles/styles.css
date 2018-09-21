@@ -603,8 +603,15 @@ a {
     }
 
 .page-section--testimonials {
-        background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
-        background-size: cover;
+        background-color: #e0e6ef;
+    }
+
+@media (min-width: 800px) {
+
+.page-section--testimonials {
+            background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+            background-size: cover
+    }
     }
 
 .headline {
@@ -667,6 +674,10 @@ a {
         display: table;
     }
 
+.row--t-padding {
+        padding-top: 80px;
+    }
+
 .row--gutters {
         margin-right: -65px;
     }
@@ -675,8 +686,16 @@ a {
         margin-right: -100px;
     }
 
+.row--gutters-small {
+        margin-right: -45px;
+    }
+
 .row--gutters > div {
         padding-right: 65px;
+    }
+
+.row--gutters-small > div {
+        padding-right: 45px;
     }
 
 .row--gutters-large > div {
@@ -716,6 +735,24 @@ a {
         width: 63%;
     }
     }
+
+/* Begin Equal Height Rules */
+
+@media (min-width: 800px) {
+
+.row--equal-height-at-medium {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex
+    }
+    }
+
+.row--equal-height-at-medium > div {
+            float: none;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
 
 .generic-content-container p {
         line-height: 1.65;
